@@ -217,6 +217,18 @@
     <Compile Include="Migrations\201711270203295_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201711270203295_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711270326009_add Name to membershiptype.cs" />
+    <Compile Include="Migrations\201711270326009_add Name to membershiptype.Designer.cs">
+      <DependentUpon>201711270326009_add Name to membershiptype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711270343500_add birthday to customer database.cs" />
+    <Compile Include="Migrations\201711270343500_add birthday to customer database.Designer.cs">
+      <DependentUpon>201711270343500_add birthday to customer database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712030650091_add Movie database.cs" />
+    <Compile Include="Migrations\201712030650091_add Movie database.Designer.cs">
+      <DependentUpon>201712030650091_add Movie database.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -322,6 +334,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711270203295_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201711270203295_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711270326009_add Name to membershiptype.resx">
+      <DependentUpon>201711270326009_add Name to membershiptype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711270343500_add birthday to customer database.resx">
+      <DependentUpon>201711270343500_add birthday to customer database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712030650091_add Movie database.resx">
+      <DependentUpon>201712030650091_add Movie database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

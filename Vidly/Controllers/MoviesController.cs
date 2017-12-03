@@ -10,7 +10,9 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        // GET: Movies/Random
+        public ApplicationDbContext _context;
+
+
         public ActionResult Index()
         {
             var movie = new Movie()
