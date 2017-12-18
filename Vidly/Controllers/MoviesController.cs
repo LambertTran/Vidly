@@ -11,18 +11,27 @@ namespace Vidly.Controllers
     public class MoviesController : Controller
     {
         public ApplicationDbContext _context;
-
-
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+        // index page
         public ActionResult Index()
         {
-            var movie = new Movie()
-            {
-                Name = "Shrek!"
-            };          
+            var movie = _context.Movies.ToList();
 
             return View(movie);
         }
         
+        public ActionResult Details(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+            return View(movie);
+        }
         
     }
 }
