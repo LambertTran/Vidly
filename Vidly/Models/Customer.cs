@@ -15,6 +15,7 @@ namespace Vidly.Models
         public string Birthday { get; set; }
         public bool IsSubscribedToNewLetter { get; set; }
         public MembershipType MembershipType { get; set; }
+        [Display(Name= "Membership Type")]
         public byte MembershipTypeId { get; set; }
     }
 }
