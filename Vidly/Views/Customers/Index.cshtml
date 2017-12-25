@@ -5,7 +5,7 @@
 }
 
 <h2>Customers</h2>   
-    
+@Html.ActionLink("New Customer","New","Customers", new { @class="btn btn-primary" })    
         @foreach (var customer in Model)
         {
             <li>@Html.ActionLink(@customer.Name, "Edit", "Customers", new { id = customer.Id }, null) </li>
